@@ -87,6 +87,11 @@ Applications are tested across major browsers:
 
 ---
 
+## 🔗 Live Demo
+
+https://heng03a.github.io/responsive-design-portfolio/
+
+
 ## 🔷 Testing Methodology
 
 A structured validation approach is used to ensure reliability:
