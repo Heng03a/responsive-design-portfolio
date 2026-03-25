@@ -1,3 +1,18 @@
+body {
+  background: #f5f7fb;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+a {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+h1 {
+  color: #111827;
+}
+
 .hero{
 text-align:center;
 padding:60px 20px;
