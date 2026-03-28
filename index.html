@@ -1,547 +1,652 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Jialumen (Pan Jia Xing) — Web Application Developer portfolio focused on responsive UI engineering, cross-browser compatibility, distributed systems, Angular, ASP.NET Core, Node.js, and cloud deployment."
-  />
-  <title>Jialumen | Responsive UI Engineering Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>[YOUR NAME] | Responsive UI Engineering Portfolio</title>
+    <meta
+      name="description"
+      content="[WRITE A 1-SENTENCE PROFESSIONAL SUMMARY FOR SEO AND RECRUITERS]"
+    />
+    <meta
+      name="keywords"
+      content="[ADD KEYWORDS: ASP.NET Core, Angular, Node.js, Responsive Design, Cross-Browser, JWT, CORS, Portfolio]"
+    />
+    <meta name="author" content="[YOUR NAME]" />
 
-  <link rel="stylesheet" href="main.css" />
-</head>
+    <!-- Open Graph -->
+    <meta property="og:title" content="[YOUR NAME] | Responsive UI Engineering Portfolio" />
+    <meta property="og:description" content="[SHORT SOCIAL SHARE DESCRIPTION]" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="[YOUR PORTFOLIO URL]" />
+    <meta property="og:image" content="[OPTIONAL PREVIEW IMAGE URL]" />
 
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#top" aria-label="Go to top">
-        <span class="brand-dot" aria-hidden="true"></span>
-        <span class="brand-text">Jialumen</span>
-      </a>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="[YOUR NAME] | Responsive UI Engineering Portfolio" />
+    <meta name="twitter:description" content="[SHORT SOCIAL SHARE DESCRIPTION]" />
+    <meta name="twitter:image" content="[OPTIONAL PREVIEW IMAGE URL]" />
 
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#architecture">Architecture</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-      <div class="nav-actions">
-        <a class="btn btn-ghost" href="#contact">Resume</a>
-        <a class="btn btn-primary" href="#projects">View Work</a>
-      </div>
-    </div>
-  </header>
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-  <main id="top">
-    <!-- Hero -->
-    <section class="hero">
+  <body>
+    <!-- =========================
+         HEADER / NAVIGATION
+    ========================== -->
+    <header class="site-header">
       <div class="container">
-        <p class="eyebrow">Responsive UI Engineering Portfolio</p>
+        <a href="#home" class="brand">[YOUR BRAND / NAME]</a>
 
-        <h1>Full-Stack Web Application Developer (ASP.NET Core • Angular • Node.js)</h1>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          type="button"
+        >
+          ☰
+        </button>
 
-        <p class="hero-lead">
-          Specializing in responsive, cross-browser, and distributed web applications
-          using ASP.NET Core, Angular, Node.js, jQuery, and cloud-based deployment.
-        </p>
-
-        <p class="tagline">
-          Anytime • Anywhere • Any Device • Any Browser
-        </p>
-
-        <div class="hero-tags">
-          <span>Responsive Design</span>
-          <span>Cross-Browser Compatibility</span>
-          <span>Distributed Systems (CORS)</span>
-          <span>Cloud Deployment</span>
-        </div>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">Explore Projects</a>
-          <a class="btn btn-ghost" href="#architecture">View Architecture</a>
-        </div>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#challenges">Challenges</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </header>
 
-<section class="section contact" id="contact">
-  <div class="container">
-    <h2>Contact</h2>
+    <!-- =========================
+         MAIN
+    ========================== -->
+    <main>
+      <!-- =========================
+           HERO
+      ========================== -->
+      <section id="home" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">[SHORT TAGLINE / ROLE CATEGORY]</p>
 
-    <p>
-      I am open to opportunities as a Web Application Developer, focusing on 
-      responsive UI engineering, full-stack development, and system modernization.
-    </p>
+            <h1>[YOUR MAIN HEADLINE]</h1>
 
-    <p>
-      Please feel free to explore my GitHub projects or reach out for further discussion.
-    </p>
+            <h2>[YOUR PROFESSIONAL TITLE]</h2>
 
-    <div class="buttons">
-      <a class="btn btn-primary"
-         href="https://github.com/Heng03a"
-         target="_blank" rel="noreferrer">
-         View GitHub Profile
-      </a>
-
-      <a class="btn btn-ghost"
-         href="https://heng03a.github.io/Portfolio---Projects-Developed/"
-         target="_blank" rel="noreferrer">
-         View Main Portfolio
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt">
-  <div class="container">
-    <h2>Engineering Challenges & Solutions</h2>
-
-    <div class="feature-grid">
-      <article class="feature-card">
-        <h3>CORS in Distributed Systems</h3>
-        <p>
-          Faced cross-origin issues when deploying Angular frontend and Node.js backend
-          separately. Implemented secure CORS configuration with origin whitelisting
-          and credential handling.
-        </p>
-      </article>
-
-      <article class="feature-card">
-        <h3>Responsive UI Consistency</h3>
-        <p>
-          Ensured layouts adapt across multiple screen sizes using flexible grids,
-          spacing control, and responsive breakpoints.
-        </p>
-      </article>
-
-      <article class="feature-card">
-        <h3>Cross-Browser Differences</h3>
-        <p>
-          Verified UI behavior across Chrome, Edge, and Firefox, resolving styling
-          inconsistencies and interaction differences.
-        </p>
-      </article>
-
-      <article class="feature-card">
-        <h3>Cloud Deployment Integration</h3>
-        <p>
-          Managed deployment across Vercel and Railway, ensuring seamless integration
-          between frontend and backend services.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
-    <!-- Engineering Focus -->
-    <section class="section section-alt" id="skills">
-      <div class="container">
-        <h2>Engineering Focus</h2>
-        <p class="section-intro">
-          I build web applications with an emphasis on usability, maintainability,
-          responsive behavior, and production-ready architecture.
-        </p>
-
-        <div class="feature-grid">
-          <article class="feature-card">
-            <h3>Responsive UI Engineering</h3>
-            <p>
-              Designing interfaces that adapt effectively across desktop, tablet,
-              and mobile screen sizes without compromising usability.
+            <p class="hero-summary">
+              [WRITE A STRONG 2-3 SENTENCE INTRODUCTION THAT EXPLAINS WHO YOU ARE,
+              WHAT YOU BUILD, AND THE VALUE YOU BRING.]
             </p>
-          </article>
 
-          <article class="feature-card">
-            <h3>Cross-Browser Reliability</h3>
-            <p>
-              Ensuring consistent behavior and visual stability across Chrome,
-              Edge, and Firefox through practical browser testing.
+            <p class="hero-pillars">
+              [EXAMPLE: Anytime • Anywhere • Any Device • Any Browser]
             </p>
-          </article>
 
-          <article class="feature-card">
-            <h3>Distributed Web Systems</h3>
-            <p>
-              Building frontend-backend applications with secure API communication,
-              CORS configuration, JWT authentication, and cloud deployment.
-            </p>
-          </article>
-
-          <article class="feature-card">
-            <h3>Structured Engineering Practices</h3>
-            <p>
-              Applying separation of concerns, layered architecture, reusable
-              patterns, and maintainable folder structures for long-term growth.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Responsive Design Matters -->
-    <section class="section article">
-      <div class="container">
-        <h2>Why Responsive UI/UX Design Matters</h2>
-
-        <p>
-          Modern applications are accessed from desktop computers, laptops,
-          tablets, and mobile phones. Users expect software systems to function
-          consistently regardless of screen size or browser environment.
-        </p>
-
-        <p>
-          Responsive design enables the user interface to adapt intelligently to
-          different devices and viewport dimensions. This improves usability,
-          accessibility, and continuity of workflow for both internal enterprise
-          users and public-facing application users.
-        </p>
-
-        <h3>Benefits of Responsive Systems</h3>
-        <ul>
-          <li>Improved usability across multiple devices</li>
-          <li>Consistent user experience across browsers</li>
-          <li>Reduced dependency on separate mobile applications</li>
-          <li>Better accessibility for remote and on-the-go users</li>
-          <li>Stronger long-term compatibility with evolving devices</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- UI/UX Characteristics -->
-    <section class="section article section-alt">
-      <div class="container">
-        <h2>Responsive UI/UX Characteristics and Business Benefits</h2>
-
-        <p>
-          Responsive design is not only about shrinking content to fit a smaller
-          screen. It requires a well-engineered layout strategy, adaptable
-          components, and thoughtful interaction design.
-        </p>
-
-        <h3>Key UI/UX Characteristics</h3>
-        <ul>
-          <li>Flexible grid and container layouts</li>
-          <li>Adaptive typography and image scaling</li>
-          <li>Touch-friendly controls and interaction targets</li>
-          <li>Optimized spacing and readable visual hierarchy</li>
-          <li>Responsive breakpoints for different screen environments</li>
-        </ul>
-
-        <h3>Business Benefits</h3>
-        <ul>
-          <li>Higher user engagement and retention</li>
-          <li>Improved productivity for internal application users</li>
-          <li>Better accessibility for customers and staff</li>
-          <li>Lower maintenance cost compared with separate device-specific solutions</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="section showcase" id="projects">
-      <div class="container">
-        <h2>Project Showcase</h2>
-        <p class="section-intro">
-          Real engineering demonstrations using Angular, ASP.NET Core MVC, and
-          jQuery applications with responsive layouts, architectural structure,
-          and browser compatibility in mind.
-        </p>
-
-        <div class="project-grid">
-          <article class="card">
-            <div class="card-top">
-              <div class="tag">Angular • Node.js • MongoDB • JWT</div>
-              <h3>Angular Cloud Todo Application</h3>
+            <div class="hero-keywords">
+              <span>[KEYWORD 1]</span>
+              <span>[KEYWORD 2]</span>
+              <span>[KEYWORD 3]</span>
+              <span>[KEYWORD 4]</span>
+              <span>[KEYWORD 5]</span>
             </div>
 
-            <p>
-              A distributed cloud-hosted task management application demonstrating
-              Angular frontend architecture, Node.js/Express backend APIs, JWT
-              authentication, MongoDB integration, and responsive UI behavior.
-            </p>
-
-            <ul>
-              <li>Responsive frontend across desktop, tablet, and mobile</li>
-              <li>Distributed frontend-backend deployment</li>
-              <li>JWT authentication and protected API access</li>
-              <li>CORS-secured communication between cloud services</li>
-            </ul>
-
-            <div class="buttons">
-              <a class="btn btn-primary btn-sm" 
-   href="https://angular-todo-mongodb-frontend.vercel.app/login" 
-   target="_blank" rel="noreferrer">
-   View Live App
-</a>
-
-<a class="btn btn-ghost btn-sm" 
-   href="https://github.com/Heng03a/angular-todo-mongodb-frontend#README.md" 
-   target="_blank" rel="noreferrer">
-   View Code
-</a>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">Explore Projects</a>
+              <a class="btn btn-secondary" href="#architecture">View Architecture</a>
+              <a class="btn btn-ghost" href="[YOUR RESUME URL]" target="_blank" rel="noreferrer">
+                Resume
+              </a>
             </div>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <div class="tag">ASP.NET Core MVC • EF Core • PostgreSQL</div>
-              <h3>BossTodoMvc ASP.NET Core Application</h3>
-            </div>
-
-            <p>
-              A layered ASP.NET Core MVC application designed with separation of
-              concerns, domain-oriented structure, EF Core data access, and a
-              responsive Razor UI.
-            </p>
-
-            <ul>
-              <li>Layered architecture with clear responsibilities</li>
-              <li>Responsive Razor-based user interface</li>
-              <li>EF Core with PostgreSQL integration</li>
-              <li>Suitable as a reusable engineering template</li>
-            </ul>
-
-            <div class="buttons">
-<a class="btn btn-primary btn-sm" 
-   href="https://bosstodomvcrailwayneno-production.up.railway.app/" 
-   target="_blank" rel="noreferrer">
-   View Live App
-</a>
-
-<a class="btn btn-ghost btn-sm" 
-   href="https://github.com/Heng03a/BossTodoMvc_Railway_Neno#README.md" 
-   target="_blank" rel="noreferrer">
-   View Code
-</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <div class="tag">jQuery • HTML • CSS • LocalStorage</div>
-              <h3>Responsive jQuery Todo App</h3>
-            </div>
-
-            <p>
-              A mobile-first web application demonstrating responsive UI patterns,
-              cross-browser compatibility, and client-side state persistence using
-              LocalStorage.
-            </p>
-
-            <ul>
-              <li>Responsive layout for desktop, tablet, and mobile</li>
-              <li>Cross-browser tested across Chrome, Edge, and Firefox</li>
-              <li>LocalStorage persistence for tasks</li>
-              <li>Enhanced interactions including custom sorting UI</li>
-            </ul>
-
-            <div class="buttons">
-<a class="btn btn-primary btn-sm" 
-   href="https://heng03a.github.io/jquery-todo-app/" 
-   target="_blank" rel="noreferrer">
-   View Live App
-</a>
-
-<a class="btn btn-ghost btn-sm" 
-   href="https://github.com/Heng03a/jquery-todo-app#README.md" 
-   target="_blank" rel="noreferrer">
-   View Code
-</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Cross Browser -->
-    <section class="section browser-proof section-alt">
-      <div class="container">
-        <h2>Cross-Browser Compatibility</h2>
-
-        <p>
-          The applications in this portfolio are designed and tested to maintain
-          consistent layout, interaction behavior, and usability across major
-          modern browsers.
-        </p>
-
-        <ul>
-          <li>Google Chrome</li>
-          <li>Microsoft Edge</li>
-          <li>Mozilla Firefox</li>
-        </ul>
-
-        <p>
-          Browser verification helps demonstrate that the applications are not
-          only functional in a single development environment, but engineered for
-          broader real-world usage.
-        </p>
-      </div>
-    </section>
-
-<div class="comparison-grid">
-  <div class="card">
-    <h3>Chrome</h3>
-    <img src="images/chrome-proof.png" alt="Chrome proof" />
-  </div>
-
-  <div class="card">
-    <h3>Firefox</h3>
-    <img src="images/firefox-proof.png" alt="Firefox proof" />
-  </div>
-
-  <div class="card">
-    <h3>Edge</h3>
-    <img src="images/edge-proof.png" alt="Edge proof" />
-  </div>
-</div>    
-
-    <!-- Architecture -->
-    <section class="section engineering" id="architecture">
-      <div class="container">
-        <h2>Architecture Approach</h2>
-
-        <p>
-          My project approach combines responsive UI design with architectural
-          clarity, maintainable code organization, and scalable integration
-          patterns suitable for real business applications.
-        </p>
-
-        <div class="feature-grid">
-          <article class="feature-card">
-            <h3>Separation of Concerns</h3>
-            <p>
-              Organizing UI, business logic, and data access responsibilities to
-              improve maintainability and reduce coupling.
-            </p>
-          </article>
-
-          <article class="feature-card">
-            <h3>Reusable Project Structure</h3>
-            <p>
-              Building applications in a way that supports rapid prototyping,
-              future extension, and professional handover.
-            </p>
-          </article>
-
-          <article class="feature-card">
-            <h3>Distributed Frontend-Backend Design</h3>
-            <p>
-              Supporting modern deployment models with separate frontend and
-              backend services communicating through secured APIs.
-            </p>
-          </article>
-
-          <article class="feature-card">
-            <h3>Cloud-Ready Delivery</h3>
-            <p>
-              Aligning projects with practical cloud deployment flows using
-              platforms such as Vercel and Railway.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Engineering Services / Value -->
-    <section class="section services section-alt">
-      <div class="container">
-        <h2>How These Skills Support System Modernization</h2>
-
-        <p>
-          Many enterprise systems were originally designed for desktop-only
-          environments and do not perform effectively on modern devices or across
-          diverse browser environments.
-        </p>
-
-        <p>
-          The engineering approach demonstrated in this portfolio supports
-          modernization efforts by improving usability, consistency, and device
-          accessibility while preserving application structure and business flow.
-        </p>
-
-        <ul>
-          <li>Responsive UI modernization</li>
-          <li>Cross-browser compatibility improvement</li>
-          <li>Legacy interface redesign support</li>
-          <li>Mobile usability enhancement</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Legacy to Modern -->
-    <section class="section modernization">
-      <div class="container">
-        <h2>Legacy System to Responsive Modernization</h2>
-
-        <p>
-          Many enterprise applications were originally designed around fixed-width
-          desktop layouts. Responsive engineering modernizes the user interface so
-          the same system can work more effectively across devices and browsers.
-        </p>
-
-        <div class="comparison-grid">
-          <div class="before">
-            <h3>Legacy System Interface</h3>
-            <ul>
-              <li>Fixed-width layout</li>
-              <li>Small text on mobile screens</li>
-              <li>Horizontal scrolling required</li>
-              <li>Difficult interaction on touch devices</li>
-            </ul>
-            <img src="images/legacy-desktop.png" alt="Legacy system interface example" />
           </div>
 
-          <div class="after">
-            <h3>Responsive Modernized Interface</h3>
-            <ul>
-              <li>Flexible layout adapting to screen size</li>
-              <li>Readable text across device sizes</li>
-              <li>Touch-friendly controls and buttons</li>
-              <li>Consistent experience across major browsers</li>
-            </ul>
-            <img src="images/responsive-mobile.png" alt="Responsive modernized interface example" />
+          <aside class="hero-panel">
+            <div class="hero-card">
+              <h3>Professional Snapshot</h3>
+              <ul>
+                <li>[X+ years] in web application development</li>
+                <li>[ASP.NET Core / Angular / Node.js / jQuery]</li>
+                <li>[Responsive UI / Cross-browser / Cloud deployment]</li>
+                <li>[JWT / OAuth2 / CORS / REST APIs]</li>
+                <li>[HR/Payroll / Enterprise systems / Modernization]</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- =========================
+           ENGINEERING FOCUS
+      ========================== -->
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Core Strengths</p>
+            <h2>Engineering Focus</h2>
+            <p>
+              [WRITE A SHORT INTRODUCTION ABOUT YOUR APPROACH TO ENGINEERING,
+              USABILITY, MAINTAINABILITY, RESPONSIVE DESIGN, AND PRODUCTION READINESS.]
+            </p>
+          </div>
+
+          <div class="card-grid four-col">
+            <article class="info-card">
+              <h3>Responsive UI Engineering</h3>
+              <p>
+                [WRITE ABOUT DESIGNING INTERFACES THAT ADAPT WELL ACROSS DESKTOP,
+                TABLET, AND MOBILE WITHOUT LOSING USABILITY.]
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Cross-Browser Reliability</h3>
+              <p>
+                [WRITE ABOUT TESTING AND STABILIZING BEHAVIOR ACROSS CHROME,
+                EDGE, FIREFOX, AND OTHER TARGET BROWSERS.]
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Distributed Web Systems</h3>
+              <p>
+                [WRITE ABOUT FRONTEND-BACKEND SEPARATION, APIs, JWT, CORS,
+                CLOUD DEPLOYMENT, AND REAL-WORLD INTEGRATION.]
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Structured Engineering Practices</h3>
+              <p>
+                [WRITE ABOUT SEPARATION OF CONCERNS, LAYERED DESIGN,
+                REUSABLE PROJECT STRUCTURE, AND MAINTAINABLE CODEBASES.]
+              </p>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Multi Device -->
-    <section class="section devices section-alt">
-      <div class="container">
-        <h2>Multi-Device Demonstration</h2>
+      <!-- =========================
+           WHY RESPONSIVE DESIGN MATTERS
+      ========================== -->
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Design Value</p>
+            <h2>Why Responsive UI/UX Design Matters</h2>
+            <p>
+              [WRITE 1-2 PARAGRAPHS ABOUT WHY MODERN APPLICATIONS MUST WORK
+              ACROSS DEVICES, SCREEN SIZES, AND BROWSER ENVIRONMENTS.]
+            </p>
+          </div>
 
-        <p>
-          Responsive pages should be validated across multiple device categories
-          to confirm practical usability and layout consistency.
-        </p>
+          <div class="split-grid">
+            <article class="content-card">
+              <h3>Benefits of Responsive Systems</h3>
+              <ul class="feature-list">
+                <li>[Benefit 1]</li>
+                <li>[Benefit 2]</li>
+                <li>[Benefit 3]</li>
+                <li>[Benefit 4]</li>
+                <li>[Benefit 5]</li>
+              </ul>
+            </article>
 
-        <ul>
-          <li>Desktop Monitor</li>
-          <li>Laptop</li>
-          <li>Tablet</li>
-          <li>Mobile Phone</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section contact" id="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>
-          For portfolio review, project discussion, or job opportunities, please
-          connect through my GitHub portfolio and repository links. Resume link
-          can be added here next.
-        </p>
-
-        <div class="buttons">
-          <a class="btn btn-primary" href="https://github.com/Heng03a" target="_blank" rel="noreferrer">GitHub Profile</a>
-          <a class="btn btn-ghost" href="https://heng03a.github.io/Portfolio---Projects-Developed/" target="_blank" rel="noreferrer">Main Portfolio</a>
+            <article class="content-card">
+              <h3>Key UI/UX Characteristics</h3>
+              <ul class="feature-list">
+                <li>[Characteristic 1]</li>
+                <li>[Characteristic 2]</li>
+                <li>[Characteristic 3]</li>
+                <li>[Characteristic 4]</li>
+                <li>[Characteristic 5]</li>
+              </ul>
+            </article>
+          </div>
         </div>
+      </section>
+
+      <!-- =========================
+           BUSINESS BENEFITS
+      ========================== -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Business Impact</p>
+            <h2>Responsive UI/UX Characteristics and Business Benefits</h2>
+            <p>
+              [WRITE A PARAGRAPH EXPLAINING THAT RESPONSIVE DESIGN IS NOT ONLY
+              ABOUT RESIZING CONTENT, BUT ABOUT USABILITY, ACCESSIBILITY,
+              MAINTAINABILITY, AND BUSINESS VALUE.]
+            </p>
+          </div>
+
+          <div class="card-grid two-col">
+            <article class="info-card">
+              <h3>Technical Characteristics</h3>
+              <ul class="feature-list">
+                <li>[Flexible layouts]</li>
+                <li>[Adaptive typography and media]</li>
+                <li>[Touch-friendly controls]</li>
+                <li>[Readable hierarchy and spacing]</li>
+                <li>[Responsive breakpoints]</li>
+              </ul>
+            </article>
+
+            <article class="info-card">
+              <h3>Business Benefits</h3>
+              <ul class="feature-list">
+                <li>[Higher engagement / usability]</li>
+                <li>[Improved productivity]</li>
+                <li>[Better accessibility]</li>
+                <li>[Lower maintenance cost]</li>
+                <li>[Longer-term compatibility]</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           PROJECT SHOWCASE
+      ========================== -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Portfolio Showcase</p>
+            <h2>Project Showcase</h2>
+            <p>
+              [WRITE A SHORT INTRODUCTION TO YOUR PROJECTS AND HOW THEY DEMONSTRATE
+              RESPONSIVE DESIGN, ARCHITECTURE, AND PRACTICAL ENGINEERING.]
+            </p>
+          </div>
+
+          <div class="project-list">
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-meta">[TECH STACK TAGS]</div>
+              <h3>[PROJECT 1 TITLE]</h3>
+              <p>
+                [WRITE A STRONG PROJECT SUMMARY. DESCRIBE THE PROBLEM, THE STACK,
+                THE ARCHITECTURE, AND THE ENGINEERING VALUE.]
+              </p>
+
+              <ul class="feature-list">
+                <li>[Project 1 highlight]</li>
+                <li>[Project 1 highlight]</li>
+                <li>[Project 1 highlight]</li>
+                <li>[Project 1 highlight]</li>
+              </ul>
+
+              <div class="project-actions">
+                <a class="btn btn-primary" href="[PROJECT 1 LIVE URL]" target="_blank" rel="noreferrer">
+                  Live Demo
+                </a>
+                <a class="btn btn-secondary" href="[PROJECT 1 REPO URL]" target="_blank" rel="noreferrer">
+                  Repository
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+              <div class="project-meta">[TECH STACK TAGS]</div>
+              <h3>[PROJECT 2 TITLE]</h3>
+              <p>
+                [WRITE PROJECT 2 SUMMARY.]
+              </p>
+
+              <ul class="feature-list">
+                <li>[Project 2 highlight]</li>
+                <li>[Project 2 highlight]</li>
+                <li>[Project 2 highlight]</li>
+                <li>[Project 2 highlight]</li>
+              </ul>
+
+              <div class="project-actions">
+                <a class="btn btn-primary" href="[PROJECT 2 LIVE URL]" target="_blank" rel="noreferrer">
+                  Live Demo
+                </a>
+                <a class="btn btn-secondary" href="[PROJECT 2 REPO URL]" target="_blank" rel="noreferrer">
+                  Repository
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+              <div class="project-meta">[TECH STACK TAGS]</div>
+              <h3>[PROJECT 3 TITLE]</h3>
+              <p>
+                [WRITE PROJECT 3 SUMMARY.]
+              </p>
+
+              <ul class="feature-list">
+                <li>[Project 3 highlight]</li>
+                <li>[Project 3 highlight]</li>
+                <li>[Project 3 highlight]</li>
+                <li>[Project 3 highlight]</li>
+              </ul>
+
+              <div class="project-actions">
+                <a class="btn btn-primary" href="[PROJECT 3 LIVE URL]" target="_blank" rel="noreferrer">
+                  Live Demo
+                </a>
+                <a class="btn btn-secondary" href="[PROJECT 3 REPO URL]" target="_blank" rel="noreferrer">
+                  Repository
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           ENGINEERING CHALLENGES
+      ========================== -->
+      <section id="challenges" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Problem Solving</p>
+            <h2>Engineering Challenges & Solutions</h2>
+            <p>
+              [WRITE A SHORT INTRODUCTION SHOWING THAT YOU DO NOT ONLY BUILD UI,
+              BUT ALSO SOLVE REAL ENGINEERING PROBLEMS.]
+            </p>
+          </div>
+
+          <div class="card-grid three-col">
+            <article class="info-card">
+              <h3>[Challenge 1 Title]</h3>
+              <p><strong>Challenge:</strong> [DESCRIBE THE PROBLEM]</p>
+              <p><strong>Solution:</strong> [DESCRIBE YOUR SOLUTION]</p>
+              <p><strong>Outcome:</strong> [DESCRIBE THE RESULT / VALUE]</p>
+            </article>
+
+            <article class="info-card">
+              <h3>[Challenge 2 Title]</h3>
+              <p><strong>Challenge:</strong> [DESCRIBE THE PROBLEM]</p>
+              <p><strong>Solution:</strong> [DESCRIBE YOUR SOLUTION]</p>
+              <p><strong>Outcome:</strong> [DESCRIBE THE RESULT / VALUE]</p>
+            </article>
+
+            <article class="info-card">
+              <h3>[Challenge 3 Title]</h3>
+              <p><strong>Challenge:</strong> [DESCRIBE THE PROBLEM]</p>
+              <p><strong>Solution:</strong> [DESCRIBE YOUR SOLUTION]</p>
+              <p><strong>Outcome:</strong> [DESCRIBE THE RESULT / VALUE]</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           CROSS-BROWSER
+      ========================== -->
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Verification</p>
+            <h2>Cross-Browser Compatibility</h2>
+            <p>
+              [WRITE ABOUT HOW YOU VERIFY CONSISTENT LAYOUT, INTERACTION,
+              AND USABILITY ACROSS MAJOR BROWSERS.]
+            </p>
+          </div>
+
+          <div class="card-grid three-col">
+            <article class="info-card browser-card">
+              <h3>Google Chrome</h3>
+              <p>[OPTIONAL SHORT NOTE OR TEST RESULT]</p>
+              <div class="placeholder-box">[INSERT SCREENSHOT OR ICON]</div>
+            </article>
+
+            <article class="info-card browser-card">
+              <h3>Microsoft Edge</h3>
+              <p>[OPTIONAL SHORT NOTE OR TEST RESULT]</p>
+              <div class="placeholder-box">[INSERT SCREENSHOT OR ICON]</div>
+            </article>
+
+            <article class="info-card browser-card">
+              <h3>Mozilla Firefox</h3>
+              <p>[OPTIONAL SHORT NOTE OR TEST RESULT]</p>
+              <div class="placeholder-box">[INSERT SCREENSHOT OR ICON]</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           ARCHITECTURE
+      ========================== -->
+      <section id="architecture" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">System Design</p>
+            <h2>Architecture Approach</h2>
+            <p>
+              [WRITE ABOUT YOUR APPROACH TO SEPARATION OF CONCERNS,
+              MAINTAINABLE STRUCTURE, AND SCALABLE SYSTEM DESIGN.]
+            </p>
+          </div>
+
+          <div class="card-grid two-col">
+            <article class="info-card">
+              <h3>Separation of Concerns</h3>
+              <p>[WRITE ABOUT UI, BUSINESS LOGIC, DATA ACCESS, AND MAINTAINABILITY.]</p>
+            </article>
+
+            <article class="info-card">
+              <h3>Reusable Project Structure</h3>
+              <p>[WRITE ABOUT RAPID PROTOTYPING, EXTENSIBILITY, AND PROFESSIONAL HANDOVER.]</p>
+            </article>
+
+            <article class="info-card">
+              <h3>Distributed Frontend-Backend Design</h3>
+              <p>[WRITE ABOUT FRONTEND + BACKEND + API + SECURITY + DEPLOYMENT.]</p>
+            </article>
+
+            <article class="info-card">
+              <h3>Cloud-Ready Delivery</h3>
+              <p>[WRITE ABOUT VERCEL / RAILWAY / CI-CD / LIVE DEPLOYMENT FLOW.]</p>
+            </article>
+          </div>
+
+          <div class="architecture-diagram">
+            <h3>Sample Architecture View</h3>
+            <pre>
+[ Browser / User ]
+        ↓
+[ Frontend UI Layer ]
+        ↓
+[ API / Backend Layer ]
+        ↓
+[ Database / Persistence Layer ]
+
+[Optional side integrations:
+ JWT Auth | CORS | Cloud Hosting | External APIs ]
+            </pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           MODERNIZATION
+      ========================== -->
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Modernization Value</p>
+            <h2>How These Skills Support System Modernization</h2>
+            <p>
+              [WRITE ABOUT HOW RESPONSIVE UI, CROSS-BROWSER RELIABILITY,
+              AND ARCHITECTURAL CLARITY HELP MODERNIZE LEGACY SYSTEMS.]
+            </p>
+          </div>
+
+          <div class="card-grid two-col">
+            <article class="content-card">
+              <h3>Legacy System Interface</h3>
+              <ul class="feature-list">
+                <li>[Legacy issue]</li>
+                <li>[Legacy issue]</li>
+                <li>[Legacy issue]</li>
+                <li>[Legacy issue]</li>
+              </ul>
+              <div class="placeholder-box">[INSERT LEGACY UI IMAGE]</div>
+            </article>
+
+            <article class="content-card">
+              <h3>Responsive Modernized Interface</h3>
+              <ul class="feature-list">
+                <li>[Modernized improvement]</li>
+                <li>[Modernized improvement]</li>
+                <li>[Modernized improvement]</li>
+                <li>[Modernized improvement]</li>
+              </ul>
+              <div class="placeholder-box">[INSERT MODERNIZED UI IMAGE]</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           MULTI-DEVICE
+      ========================== -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Device Validation</p>
+            <h2>Multi-Device Demonstration</h2>
+            <p>
+              [WRITE ABOUT TESTING OR DEMONSTRATING THE UI ON MULTIPLE
+              DEVICE CATEGORIES.]
+            </p>
+          </div>
+
+          <div class="card-grid four-col">
+            <article class="info-card">
+              <h3>Desktop Monitor</h3>
+              <div class="placeholder-box">[INSERT IMAGE]</div>
+            </article>
+
+            <article class="info-card">
+              <h3>Laptop</h3>
+              <div class="placeholder-box">[INSERT IMAGE]</div>
+            </article>
+
+            <article class="info-card">
+              <h3>Tablet</h3>
+              <div class="placeholder-box">[INSERT IMAGE]</div>
+            </article>
+
+            <article class="info-card">
+              <h3>Mobile Phone</h3>
+              <div class="placeholder-box">[INSERT IMAGE]</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           CONTACT
+      ========================== -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Let’s Connect</p>
+            <h2>Contact</h2>
+            <p>
+              [WRITE A SHORT INVITATION FOR RECRUITERS, HIRING MANAGERS,
+              OR CLIENTS TO CONTACT YOU.]
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <article class="content-card">
+              <h3>Professional Links</h3>
+              <ul class="contact-list">
+                <li><strong>Email:</strong> <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a></li>
+                <li><strong>GitHub:</strong> <a href="[YOUR GITHUB URL]" target="_blank" rel="noreferrer">[YOUR GITHUB URL]</a></li>
+                <li><strong>Portfolio:</strong> <a href="[YOUR PORTFOLIO URL]" target="_blank" rel="noreferrer">[YOUR PORTFOLIO URL]</a></li>
+                <li><strong>LinkedIn:</strong> <a href="[YOUR LINKEDIN URL]" target="_blank" rel="noreferrer">[YOUR LINKEDIN URL]</a></li>
+                <li><strong>Resume:</strong> <a href="[YOUR RESUME URL]" target="_blank" rel="noreferrer">View Resume</a></li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <h3>Contact Form</h3>
+              <form class="contact-form" action="[YOUR FORM ENDPOINT OR EMAILJS LOGIC]" method="post">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="[Name]" required />
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="[Email]" required />
+
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="[Subject]" required />
+
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="[Write your message here]"
+                  required
+                ></textarea>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>© <span id="year"></span> [YOUR NAME]. All rights reserved.</p>
+        <p>[OPTIONAL FOOTER TAGLINE]</p>
       </div>
-    </section>
-  </main>
-</body>
+    </footer>
+
+    <!-- =========================
+         JS
+    ========================== -->
+    <script>
+      // Mobile nav toggle
+      const navToggle = document.querySelector(".nav-toggle");
+      const siteNav = document.querySelector(".site-nav");
+
+      if (navToggle && siteNav) {
+        navToggle.addEventListener("click", () => {
+          const expanded = navToggle.getAttribute("aria-expanded") === "true";
+          navToggle.setAttribute("aria-expanded", String(!expanded));
+          siteNav.classList.toggle("is-open");
+        });
+      }
+
+      // Footer year
+      const yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
 </html>
