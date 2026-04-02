@@ -426,46 +426,68 @@
         </div>
       </section>
 
-      <!-- =========================
-           CROSS-BROWSER
-      ========================== -->
-      <section class="section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Verification</p>
-            <h2>Cross-Browser Compatibility</h2>
-            <p>
-              Cross-browser compatibility is an important part of professional UI delivery. A responsive
-              application should not only look good in one browser, but also maintain layout stability,
-              readability, and interaction consistency across commonly used browser environments.
-            </p>
-            <p>
-              My portfolio includes browser validation examples to demonstrate that responsive layouts, controls,
-              and navigation flow remain reliable across multiple modern browsers.
-            </p>
-          </div>
+ <!-- =========================
+     CROSS-BROWSER
+========================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Verification</p>
+      <h2>Cross-Browser Compatibility</h2>
+      <p>
+        Cross-browser compatibility is an important part of professional UI delivery. A responsive
+        application should not only look good in one browser, but also maintain layout stability,
+        readability, and interaction consistency across commonly used browser environments.
+      </p>
+      <p>
+        My portfolio includes browser validation examples to demonstrate that responsive layouts, controls,
+        and navigation flow remain reliable across multiple modern browsers.
+      </p>
+    </div>
 
-          <div class="card-grid three-col">
-            <article class="info-card browser-card">
-              <h3>Google Chrome</h3>
-              <p>Layout and interaction verification for a widely used browser environment.</p>
-              <div class="placeholder-box"><img src="images/chrome-proof.png" alt="Chrome proof" /></div>
-            </article>
+    <div class="card-grid three-col">
+<article class="info-card browser-card">
+  <h3>Google Chrome</h3>
+  <p>Layout and interaction verification for a widely used browser environment.</p>
+  <div class="placeholder-box">
+    <img
+      src="images/chrome-proof.png"
+      alt="Google Chrome cross-browser proof screenshot"
+      class="clickable-proof"
+      onclick="openImageModal(this.src, this.alt)"
+    />
+  </div>
+</article>
 
-            <article class="info-card browser-card">
-              <h3>Microsoft Edge</h3>
-              <p>Compatibility proof for Chromium-based enterprise and workplace browser usage.</p>
-              <div class="placeholder-box"><img src="images/edge-proof.png" alt="Edge proof" /></div>
-            </article>
+<article class="info-card browser-card">
+  <h3>Microsoft Edge</h3>
+  <p>Compatibility proof for Chromium-based enterprise and workplace browser usage.</p>
+  <div class="placeholder-box">
+    <img
+      src="images/edge-proof.png"
+      alt="Microsoft Edge cross-browser proof screenshot"
+      class="clickable-proof"
+      onclick="openImageModal(this.src, this.alt)"
+    />
+  </div>
+</article>
 
-            <article class="info-card browser-card">
-              <h3>Mozilla Firefox</h3>
-              <p>Cross-browser validation to demonstrate consistency beyond a single browser engine.</p>
-              <div class="placeholder-box"><img src="images/firefox-proof.png" alt="Firefox proof" /></div>
-            </article>
-          </div>
-        </div>
-      </section>
+<article class="info-card browser-card">
+  <h3>Mozilla Firefox</h3>
+  <p>Cross-browser validation to demonstrate consistency beyond a single browser engine.</p>
+  <div class="placeholder-box">
+    <img
+      src="images/firefox-proof.png"
+      alt="Mozilla Firefox cross-browser proof screenshot"
+      class="clickable-proof"
+      onclick="openImageModal(this.src, this.alt)"
+    />
+  </div>
+</article>
+
+    </div>
+  </div>
+</section>
 
       <!-- =========================
            ARCHITECTURE
@@ -686,6 +708,18 @@ Responsive Design | JWT Auth | CORS | Cloud Hosting | API Integration
     </footer>
 
     <!-- =========================
+         Images Modal
+    ========================== -->
+
+<div id="imageModal" class="image-modal" onclick="closeImageModal()">
+  <span class="image-modal-close">&times;</span>
+  <div class="image-modal-inner" onclick="event.stopPropagation()">
+    <img id="modalImage" class="image-modal-content" src="" alt="" />
+    <p id="modalCaption" class="image-modal-caption"></p>
+  </div>
+</div>
+
+    <!-- =========================
          JS
     ========================== -->
     <script>
@@ -704,6 +738,27 @@ Responsive Design | JWT Auth | CORS | Cloud Hosting | API Integration
       if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
       }
+
+  function openImageModal(src, alt) {
+    document.getElementById("imageModal").style.display = "flex";
+    document.getElementById("modalImage").src = src;
+    document.getElementById("modalImage").alt = alt;
+    document.getElementById("modalCaption").textContent = alt;
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeImageModal() {
+    document.getElementById("imageModal").style.display = "none";
+    document.getElementById("modalImage").src = "";
+    document.getElementById("modalCaption").textContent = "";
+    document.body.style.overflow = "";
+  }
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeImageModal();
+    }
+  });
     </script>
   </body>
 </html>
