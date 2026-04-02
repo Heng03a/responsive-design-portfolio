@@ -818,3 +818,44 @@ button {
 .clickable-proof:hover {
   transform: scale(1.02);
 }
+
+.proof-card {
+  margin-top: 1rem;
+}
+
+.image-wrap {
+  position: relative;
+}
+
+.image-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+
+.legacy-badge {
+  background: #b91c1c;
+}
+
+.modern-badge {
+  background: #2563eb;
+}
+
+.browser-badge {
+  background: #374151;
+}
+
+.proof-caption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #6b7280;
+}
