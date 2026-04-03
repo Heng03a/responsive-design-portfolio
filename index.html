@@ -28,25 +28,54 @@
     <meta property="og:image" content="[OPTIONAL PREVIEW IMAGE URL]" />
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Pan Jia Xing | Responsive UI Engineering Portfolio" />
-    <meta
-      name="twitter:description"
-      content="Responsive UI engineering portfolio featuring cross-browser, full-stack, and cloud-hosted application projects."
-    />
-    <meta name="twitter:image" content="[OPTIONAL PREVIEW IMAGE URL]" />
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Pan Jia Xing | Responsive UI Engineering Portfolio</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+  <meta
+    name="description"
+    content="Pan Jia Xing is a Web Application Developer specializing in responsive UI engineering, cross-browser compatibility, full-stack web applications, maintainable architecture, and cloud-hosted distributed systems."
+  />
+  <meta
+    name="keywords"
+    content="Pan Jia Xing, Web Application Developer, Responsive UI Engineering, Cross-Browser Compatibility, ASP.NET Core, Angular, Node.js, Express, jQuery, JWT, CORS, Cloud Deployment, Portfolio"
+  />
+  <meta name="author" content="Pan Jia Xing" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="main.css" />
-  </head>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pan Jia Xing | Responsive UI Engineering Portfolio" />
+  <meta
+    property="og:description"
+    content="Responsive UI engineering portfolio featuring cross-browser validation, full-stack application design, maintainable architecture, and cloud-hosted distributed systems."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://heng03a.github.io/responsive-design-portfolio/" />
+  <meta property="og:image" content="https://heng03a.github.io/responsive-design-portfolio/images/portfolio-preview.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pan Jia Xing | Responsive UI Engineering Portfolio" />
+  <meta
+    name="twitter:description"
+    content="Responsive UI engineering portfolio featuring cross-browser validation, full-stack application design, maintainable architecture, and cloud-hosted distributed systems."
+  />
+  <meta name="twitter:image" content="https://heng03a.github.io/responsive-design-portfolio/images/portfolio-preview.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="main.css" />
+</head>
 
   <body>
     <!-- =========================
@@ -121,7 +150,7 @@
               <a class="btn btn-primary" href="#projects">Explore Projects</a>
               <a class="btn btn-secondary" href="#architecture">View Architecture</a>
               <a class="btn btn-ghost" href="[YOUR RESUME URL]" target="_blank" rel="noreferrer">
-                Resume
+                View Resume
               </a>
             </div>
           </div>
@@ -416,15 +445,70 @@
               <p><strong>Outcome:</strong> Produced solutions that are easier to extend, understand, troubleshoot, and reuse for future projects.</p>
             </article>
 
-            <article class="info-card">
-              <h3>Responsive and Browser-Friendly UI Delivery</h3>
-              <p><strong>Challenge:</strong> Layout and interaction quality must remain usable across multiple viewport sizes and browser environments.</p>
-              <p><strong>Solution:</strong> Built responsive layouts, adaptable controls, and consistent visual structure while validating presentation across desktop and mobile conditions.</p>
-              <p><strong>Outcome:</strong> Delivered interfaces that support wider accessibility and more dependable user experience.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+<section id="challenges" class="section section-alt">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Problem Solving</p>
+      <h2>Engineering Challenges &amp; Solutions</h2>
+      <p>
+        Beyond interface presentation, these projects reflect practical engineering decisions across distributed
+        deployment, maintainable solution structure, and responsive front-end delivery. The examples below
+        summarize real implementation concerns encountered during development.
+      </p>
+    </div>
+
+    <div class="card-grid three-col">
+      <article class="info-card">
+        <h3>CORS in Distributed Deployment</h3>
+        <p>
+          <strong>Challenge:</strong> When frontend and backend services are deployed separately, browser security
+          rules can block requests if cross-origin configuration is incomplete or inconsistent.
+        </p>
+        <p>
+          <strong>Solution:</strong> Configured explicit origin whitelisting, credentials support, approved headers,
+          and preflight handling so the frontend and backend could communicate securely across different hosted
+          environments.
+        </p>
+        <p>
+          <strong>Outcome:</strong> Achieved stable frontend-backend integration suitable for cloud-hosted access and
+          reliable user interaction.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <h3>Maintainable Solution Structure</h3>
+        <p>
+          <strong>Challenge:</strong> As features grow, mixing UI concerns, business logic, and persistence
+          responsibilities in the same area increases maintenance effort and makes future enhancement harder.
+        </p>
+        <p>
+          <strong>Solution:</strong> Applied separation of concerns through layered design, clearer service and
+          repository boundaries, and more structured folder organization.
+        </p>
+        <p>
+          <strong>Outcome:</strong> Produced solutions that are easier to extend, troubleshoot, understand, and reuse
+          for future development.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <h3>Responsive and Cross-Browser UI Reliability</h3>
+        <p>
+          <strong>Challenge:</strong> Layout quality, readability, and user interaction must remain dependable across
+          multiple screen sizes and browser environments.
+        </p>
+        <p>
+          <strong>Solution:</strong> Built responsive layouts, adaptable controls, and consistent visual structure
+          while validating behavior across desktop, tablet, mobile, and major modern browsers.
+        </p>
+        <p>
+          <strong>Outcome:</strong> Delivered interfaces with stronger usability, wider accessibility, and more
+          consistent presentation across environments.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
 
  <!-- =========================
      CROSS-BROWSER
@@ -687,79 +771,119 @@ Responsive Design | JWT Auth | CORS | Cloud Hosting | API Integration
                 src="images/Tablet.png"
                 alt="Modern responsive UI with flexible layout and improved usability"
                 class="clickable-proof"
-                onclick="openImageModal(this.src, this.alt)"
-              />
-</div>
-            </article>
+             <section id="responsive-proof" class="section section-alt">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Responsive Evidence</p>
+      <h2>Multi-Device Responsive Proof</h2>
+      <p>
+        Responsive design should be demonstrated with visible evidence. The screenshots below show how layout,
+        spacing, content flow, and usability are preserved across different device categories and viewport sizes.
+      </p>
+    </div>
 
-            <article class="info-card">
-              <h3>Mobile Phone</h3>
-              <div class="placeholder-box">                <img
-                src="images/Mobile.png"
-                alt="Modern responsive UI with flexible layout and improved usability"
-                class="clickable-proof"
-                onclick="openImageModal(this.src, this.alt)"
-              />
-</div>
-            </article>
-          </div>
+    <div class="card-grid four-col">
+      <article class="info-card">
+        <h3>Desktop Monitor</h3>
+        <p>Full-width layout presentation for larger screen environments.</p>
+        <div class="placeholder-box">
+          <img
+            src="images/Desktop.png"
+            alt="Desktop responsive proof showing full layout structure"
+            class="clickable-proof"
+            onclick="openImageModal(this.src, this.alt)"
+          />
         </div>
-      </section>
+      </article>
 
+      <article class="info-card">
+        <h3>Laptop</h3>
+        <p>Responsive adaptation for standard working screen dimensions.</p>
+        <div class="placeholder-box">
+          <img
+            src="images/Laptop.png"
+            alt="Laptop responsive proof showing adapted layout and spacing"
+            class="clickable-proof"
+            onclick="openImageModal(this.src, this.alt)"
+          />
+        </div>
+      </article>
+
+      <article class="info-card">
+        <h3>Tablet</h3>
+        <p>Mid-sized viewport validation for touch-friendly and readable presentation.</p>
+        <div class="placeholder-box">
+          <img
+            src="images/Tablet.png"
+            alt="Tablet responsive proof showing readable layout and touch-friendly spacing"
+            class="clickable-proof"
+            onclick="openImageModal(this.src, this.alt)"
+          />
+        </div>
+      </article>
+
+      <article class="info-card">
+        <h3>Mobile Phone</h3>
+        <p>Compact-screen validation for stacked layout, readability, and interaction usability.</p>
+        <div class="placeholder-box">
+          <img
+            src="images/Mobile.png"
+            alt="Mobile responsive proof showing compact layout and readable content flow"
+            class="clickable-proof"
+            onclick="openImageModal(this.src, this.alt)"
+          />
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+      
       <!-- =========================
            CONTACT
       ========================== -->
+
       <section id="contact" class="section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Let’s Connect</p>
-            <h2>Contact</h2>
-            <p>
-              Thank you for visiting my portfolio. If you are a recruiter, hiring manager, employer, or client
-              looking for a developer with experience in responsive UI engineering, full-stack web applications,
-              structured solution design, and practical modernization-oriented thinking, I would be glad to connect.
-            </p>
-          </div>
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Let’s Connect</p>
+      <h2>Contact</h2>
+      <p>
+        Thank you for visiting my portfolio. If you are a recruiter, hiring manager, employer, or client
+        looking for a developer with experience in responsive UI engineering, full-stack web applications,
+        maintainable solution structure, and modernization-oriented thinking, I would be glad to connect.
+      </p>
+    </div>
 
-          <div class="contact-grid">
-            <article class="content-card">
-              <h3>Professional Links</h3>
-              <ul class="contact-list">
-                <li><strong>Email:</strong> <a href="mailto:heng03a@gmail.com">Email</a></li>
-                <li><strong>GitHub:</strong> <a href="github.com/Heng03a/" target="_blank" rel="noreferrer">My GitHub</a></li>
-                <li><strong>Portfolio:</strong> <a href="https://heng03a.github.io/Portfolio---Projects-Developed" target="_blank" rel="noreferrer">[YOUR PORTFOLIO URL]</a></li>
-                <li><strong>LinkedIn:</strong> <a href="[YOUR LINKEDIN URL]" target="_blank" rel="noreferrer">[YOUR LINKEDIN URL]</a></li>
-                <li><strong>Resume:</strong> <a href="[YOUR RESUME URL]" target="_blank" rel="noreferrer">View Resume</a></li>
-              </ul>
-            </article>
+    <div class="contact-grid">
+      <article class="content-card">
+        <h3>Professional Links</h3>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:heng03a@gmail.com">heng03a@gmail.com</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/Heng03a/" target="_blank" rel="noreferrer">github.com/Heng03a</a></li>
+          <li><strong>Portfolio:</strong> <a href="https://heng03a.github.io/Portfolio---Projects-Developed/" target="_blank" rel="noreferrer">Main Project Portfolio</a></li>
+         <!--  <li><strong>LinkedIn:</strong> <a href="[YOUR LINKEDIN URL]" target="_blank" rel="noreferrer">View LinkedIn Profile</a></li>-->
+          <!-- <li><strong>Resume:</strong> <a href="[YOUR RESUME URL]" target="_blank" rel="noreferrer">View Resume</a></li>-->
+        </ul>
+      </article>
 
-            <article class="content-card">
-              <h3>Contact Form</h3>
-              <form class="contact-form" action="[YOUR FORM ENDPOINT OR EMAILJS LOGIC]" method="post">
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" placeholder="Your name" required />
-
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="Your email" required />
-
-                <label for="subject">Subject</label>
-                <input id="subject" name="subject" type="text" placeholder="Subject" required />
-
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="6"
-                  placeholder="Write your message here"
-                  required
-                ></textarea>
-
-                <button type="submit" class="btn btn-primary">Send Message</button>
-              </form>
-            </article>
-          </div>
+      <article class="content-card">
+        <h3>Direct Contact</h3>
+        <p>
+          The fastest way to reach me is by email. You may also review my GitHub repositories and project
+          portfolio for additional implementation details, architecture decisions, and responsive UI examples.
+        </p>
+        <p>
+          I am open to opportunities involving responsive web application development, ASP.NET Core, Angular,
+          Node.js, UI modernization, and full-stack engineering.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:heng03a@gmail.com">Email Me</a>
+          <a class="btn btn-secondary" href="https://github.com/Heng03a/" target="_blank" rel="noreferrer">View GitHub</a>
         </div>
-      </section>
+      </article>
+    </div>
+  </div>
+</section>
     </main>
 
     <!-- =========================
