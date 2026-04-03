@@ -95,15 +95,17 @@
           ☰
         </button>
 
-        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-          <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#challenges">Challenges</a></li>
-            <li><a href="#architecture">Architecture</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+<nav id="site-nav" class="site-nav" aria-label="Main navigation">
+  <ul>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#challenges">Challenges</a></li>
+    <li><a href="#cross-browser">Cross-Browser</a></li>
+    <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#modernization">Modernization</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
       </div>
     </header>
 
@@ -114,28 +116,65 @@
       <!-- =========================
            HERO
       ========================== -->
-      <section id="home" class="hero section">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Responsive UI • Cross-Browser • Full-Stack Engineering</p>
+<section id="home" class="hero section">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Responsive UI • Cross-Browser • Full-Stack Engineering</p>
 
-            <h1>Building Responsive, Reliable, and Maintainable Web Applications</h1>
+      <h1>Responsive UI Engineering Portfolio</h1>
 
-            <h2>Web Application Developer</h2>
+      <h2>Full-Stack Web Application Developer (ASP.NET Core • Angular • Node.js)</h2>
 
-            <p class="hero-summary">
-              I am a Web Application Developer with hands-on experience building responsive web applications,
-              structured full-stack solutions, and cloud-hosted distributed systems. My portfolio focuses on
-              engineering practical, maintainable, and user-friendly applications that work consistently across
-              desktop, tablet, mobile, and major browser environments.
-            </p>
+      <p class="hero-summary">
+        I build responsive, cross-browser, and distributed web applications with a focus on usability,
+        maintainability, and production-oriented engineering. My work combines practical front-end delivery,
+        structured application architecture, and cloud-hosted deployment across modern web stacks.
+      </p>
 
-            <p class="hero-summary">
-              My work emphasizes responsive UI/UX design, separation of concerns, reusable project structure,
-              secure API integration, and production-oriented deployment practices. I aim to build applications
-              that are not only visually polished, but also technically reliable and architecturally clear.
-            </p>
+      <p class="hero-summary">
+        This portfolio demonstrates responsive UI design, full-stack integration, layered application structure,
+        API-driven communication, and browser validation across real working projects.
+      </p>
 
+      <p class="hero-pillars">Anytime • Anywhere • Any Device • Any Browser</p>
+
+      <div class="hero-keywords">
+        <span>Responsive Design</span>
+        <span>Cross-Browser Compatibility</span>
+        <span>Distributed Systems</span>
+        <span>CORS</span>
+        <span>Cloud Deployment</span>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">Explore Projects</a>
+        <a class="btn btn-secondary" href="#architecture">View Architecture</a>
+        <a class="btn btn-ghost" href="[YOUR RESUME URL]" target="_blank" rel="noreferrer">Resume</a>
+      </div>
+    </div>
+
+    <aside class="hero-panel">
+      <div class="hero-card">
+        <h3>Contact</h3>
+        <p>
+          I am open to opportunities as a Web Application Developer, focusing on responsive UI engineering,
+          full-stack development, and system modernization.
+        </p>
+        <p>
+          Please feel free to explore my GitHub projects or reach out for further discussion.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-secondary" href="https://github.com/Heng03a/" target="_blank" rel="noreferrer">
+            View GitHub Profile
+          </a>
+          <a class="btn btn-ghost" href="https://heng03a.github.io/Portfolio---Projects-Developed/" target="_blank" rel="noreferrer">
+            View Main Portfolio
+          </a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
             <p class="hero-pillars">Anytime • Anywhere • Any Device • Any Browser</p>
 
             <div class="hero-keywords">
@@ -421,66 +460,88 @@
       ========================== -->
 
 <section id="challenges" class="section section-alt">
+<section id="challenges" class="section section-alt">
   <div class="container">
     <div class="section-heading">
       <p class="eyebrow">Problem Solving</p>
       <h2>Engineering Challenges &amp; Solutions</h2>
       <p>
-        Beyond interface presentation, these projects reflect practical engineering decisions across distributed
-        deployment, maintainable solution structure, and responsive front-end delivery. The examples below
-        summarize real implementation concerns encountered during development.
+        These projects reflect practical engineering challenges encountered during real-world development,
+        including distributed deployment, maintainable application structure, and cross-browser responsive delivery.
       </p>
     </div>
 
     <div class="card-grid three-col">
+
+      <!-- CORS -->
       <article class="info-card">
         <h3>CORS in Distributed Deployment</h3>
+
         <p>
-          <strong>Challenge:</strong> When frontend and backend services are deployed separately, browser security
-          rules can block requests if cross-origin configuration is incomplete or inconsistent.
+          <strong>Challenge:</strong>
+          Separately deployed frontend (Vercel) and backend (Railway) services resulted in blocked API requests
+          due to browser cross-origin security restrictions.
         </p>
+
         <p>
-          <strong>Solution:</strong> Configured explicit origin whitelisting, credentials support, approved headers,
-          and preflight handling so the frontend and backend could communicate securely across different hosted
-          environments.
+          <strong>Solution:</strong>
+          Implemented explicit origin whitelisting, enabled credentials support, configured request headers,
+          and handled preflight OPTIONS requests in Express middleware.
         </p>
+
         <p>
-          <strong>Outcome:</strong> Achieved stable frontend-backend integration suitable for cloud-hosted access and
-          reliable user interaction.
+          <strong>Outcome:</strong>
+          Achieved stable and secure communication between frontend and backend, enabling reliable cloud-hosted
+          distributed application deployment.
         </p>
       </article>
 
+      <!-- STRUCTURE -->
       <article class="info-card">
         <h3>Maintainable Solution Structure</h3>
+
         <p>
-          <strong>Challenge:</strong> As features grow, mixing UI concerns, business logic, and persistence
-          responsibilities in the same area increases maintenance effort and makes future enhancement harder.
+          <strong>Challenge:</strong>
+          Mixing UI logic, business rules, and data access within the same layer increases complexity,
+          making maintenance, debugging, and feature extension difficult.
         </p>
+
         <p>
-          <strong>Solution:</strong> Applied separation of concerns through layered design, clearer service and
-          repository boundaries, and more structured folder organization.
+          <strong>Solution:</strong>
+          Applied layered architecture with clear separation between presentation, application logic,
+          and data persistence using structured folders and service/repository patterns.
         </p>
+
         <p>
-          <strong>Outcome:</strong> Produced solutions that are easier to extend, troubleshoot, understand, and reuse
-          for future development.
+          <strong>Outcome:</strong>
+          Improved code readability, reduced coupling, and enabled easier extension, testing, and reuse
+          across future projects.
         </p>
       </article>
 
+      <!-- RESPONSIVE -->
       <article class="info-card">
-        <h3>Responsive and Cross-Browser UI Reliability</h3>
+        <h3>Responsive & Cross-Browser UI Delivery</h3>
+
         <p>
-          <strong>Challenge:</strong> Layout quality, readability, and user interaction must remain dependable across
-          multiple screen sizes and browser environments.
+          <strong>Challenge:</strong>
+          Ensuring consistent layout, readability, and interaction behavior across different screen sizes
+          and browser engines (Chrome, Edge, Firefox).
         </p>
+
         <p>
-          <strong>Solution:</strong> Built responsive layouts, adaptable controls, and consistent visual structure
-          while validating behavior across desktop, tablet, mobile, and major modern browsers.
+          <strong>Solution:</strong>
+          Implemented responsive layouts using flexible grids and breakpoints, optimized spacing and typography,
+          and validated UI behavior across multiple browsers.
         </p>
+
         <p>
-          <strong>Outcome:</strong> Delivered interfaces with stronger usability, wider accessibility, and more
-          consistent presentation across environments.
+          <strong>Outcome:</strong>
+          Delivered a consistent and accessible user experience across desktop, tablet, and mobile environments,
+          with reliable cross-browser rendering.
         </p>
       </article>
+
     </div>
   </div>
 </section>
@@ -774,16 +835,14 @@ Responsive Design | JWT Auth | CORS | Cloud Hosting | API Integration
       <!-- =========================
            CONTACT
       ========================== -->
-
-      <section id="contact" class="section">
+<section id="contact" class="section">
   <div class="container">
     <div class="section-heading">
       <p class="eyebrow">Let’s Connect</p>
       <h2>Contact</h2>
       <p>
-        Thank you for visiting my portfolio. If you are a recruiter, hiring manager, employer, or client
-        looking for a developer with experience in responsive UI engineering, full-stack web applications,
-        maintainable solution structure, and modernization-oriented thinking, I would be glad to connect.
+        For portfolio review, project discussion, or job opportunities, please connect through my GitHub,
+        project portfolio, or direct email contact below.
       </p>
     </div>
 
@@ -792,31 +851,32 @@ Responsive Design | JWT Auth | CORS | Cloud Hosting | API Integration
         <h3>Professional Links</h3>
         <ul class="contact-list">
           <li><strong>Email:</strong> <a href="mailto:heng03a@gmail.com">heng03a@gmail.com</a></li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/Heng03a/" target="_blank" rel="noreferrer">github.com/Heng03a</a></li>
-          <li><strong>Portfolio:</strong> <a href="https://heng03a.github.io/Portfolio---Projects-Developed/" target="_blank" rel="noreferrer">Main Project Portfolio</a></li>
-         <!--  <li><strong>LinkedIn:</strong> <a href="[YOUR LINKEDIN URL]" target="_blank" rel="noreferrer">View LinkedIn Profile</a></li>-->
-          <!-- <li><strong>Resume:</strong> <a href="[YOUR RESUME URL]" target="_blank" rel="noreferrer">View Resume</a></li>-->
+          <li><strong>GitHub:</strong> <a href="https://github.com/Heng03a/" target="_blank" rel="noreferrer">GitHub Profile</a></li>
+          <li><strong>Main Portfolio:</strong> <a href="https://heng03a.github.io/Portfolio---Projects-Developed/" target="_blank" rel="noreferrer">View Main Portfolio</a></li>
+       <!--   <li><strong>Resume:</strong> <a href="[YOUR RESUME URL]" target="_blank" rel="noreferrer">View Resume</a></li>
+          <li><strong>LinkedIn:</strong> <a href="[YOUR LINKEDIN URL]" target="_blank" rel="noreferrer">View LinkedIn Profile</a></li> -->
         </ul>
       </article>
 
       <article class="content-card">
-        <h3>Direct Contact</h3>
+        <h3>Opportunity Focus</h3>
         <p>
-          The fastest way to reach me is by email. You may also review my GitHub repositories and project
-          portfolio for additional implementation details, architecture decisions, and responsive UI examples.
+          I am open to roles involving responsive web application development, ASP.NET Core, Angular, Node.js,
+          UI modernization, and full-stack engineering.
         </p>
         <p>
-          I am open to opportunities involving responsive web application development, ASP.NET Core, Angular,
-          Node.js, UI modernization, and full-stack engineering.
+          My work emphasizes practical UI/UX delivery, maintainable solution structure, and cloud-hosted
+          application design.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:heng03a@gmail.com">Email Me</a>
+          <a class="btn btn-primary" href="mailto:heng03a@gmail.com?subject=Portfolio%20Enquiry">Email Me</a>
           <a class="btn btn-secondary" href="https://github.com/Heng03a/" target="_blank" rel="noreferrer">View GitHub</a>
         </div>
       </article>
     </div>
   </div>
 </section>
+
     </main>
 
     <!-- =========================
