@@ -859,3 +859,15 @@ button {
   line-height: 1.6;
   color: #6b7280;
 }
+.btn i {
+  margin-right: 8px;
+}
+
+.project-actions i {
+  margin-right: 6px;
+}
+
+h3 i {
+  margin-right: 8px;
+  color: var(--primary);
+}
